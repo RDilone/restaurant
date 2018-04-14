@@ -1,0 +1,87 @@
+@import body
+@import header
+@import footer
+
+@font-face 
+    src: url("fonts/OpenSans-Regular.ttf")
+    font-family: "Open Sans",Arial, Helvetica, sans-serif
+
+@media screen and (max-width: 800px)
+    body
+        header 
+            .contenedor
+                position: static
+                height: auto
+                .texto
+                    position: static
+                    margin: 100px 0px
+                    .nombre
+                        font-size: 30px
+                    h3
+                        font-size: 18px
+                .menu
+                    text-align: center
+                    a
+                        margin: 10px 20px
+        .main
+            .sectionAcerca
+                .contenedor
+                    .cafe
+                        width: 100%
+                        position: relative
+                    article
+                        position: relative
+                        width: 100%
+                        top: -50px
+                        transform: translate(0px, 0px)
+            .sectionMenu
+                padding-top: 300px
+                .contenedor
+                    article
+                        width: 100%
+            .galeria
+                .foto
+                    width: 50%
+            .mapa
+                width: 80%
+                margin: auto
+            .ubicacion
+                .contenedor
+                    font-size: 12px
+
+@media screen and (max-width: 400px)
+    .main
+        .sectionAcerca
+            article
+                h3
+                    font-size: 34px
+                    margin-bottom: 10px
+        .sectionMenu
+            .contenedor
+                article
+                    .platillo
+                        .nombre
+                            font-size: 15px
+                            line-height: 16px
+                        .precio
+                            font-size: 15px
+                            line-height: 16px
+                        .descripcion
+                            font-size: 15px
+                            line-height: 16px
+        .ubicacion
+            .direccion
+                width: 100%
+                text-align: center
+                margin-bottom: 15px
+            .horario
+                width: 100%
+                text-align: center
+                        
+
+*
+    margin: 0px 
+    padding: 0px
+    -moz-box-sizing: border-box
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
